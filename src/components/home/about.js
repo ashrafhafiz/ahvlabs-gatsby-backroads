@@ -16,12 +16,12 @@ const About = () => {
         <article className={styles.aboutInfo}>
           <h4>explore the difference</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            aliquam quibusdam hic!
+            AHVLABS, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Animi aliquam quibusdam hic!
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            maxime amet consequatur.
+            AHVLABS, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptates maxime amet consequatur.
           </p>
           <button type="button" className="btn-primary">
             read more
