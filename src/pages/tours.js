@@ -17,12 +17,10 @@ export const query = graphql`
 `
 
 const Tours = props => {
+  console.log("tours props: ", props)
   return (
     <Layout>
-      <HeroStyled
-        home="false"
-        img={props.data.defaultBcg.childImageSharp.fluid}
-      >
+      <HeroStyled img={props.data.defaultBcg.childImageSharp.fluid}>
         <Banner title="Tours" info="Lorem ipsum dolor sit amet consectetur.">
           <Link to="/tours" className="btn-white">
             explore tours
