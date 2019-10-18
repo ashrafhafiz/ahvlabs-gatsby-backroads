@@ -4,7 +4,7 @@ import BackgroundImage from "gatsby-background-image"
 import styled from "styled-components"
 
 const HeroStyled = props => {
-  console.log(props)
+  // console.log(props)
   return (
     <BackgroundImage
       className={props.className}

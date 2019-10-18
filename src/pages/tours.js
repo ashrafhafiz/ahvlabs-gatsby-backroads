@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
 import HeroStyled from "../components/heroStyled"
 import Banner from "../components/banner"
+import ToursComponent from "../components/tours/allTours"
 
 export const query = graphql`
   query {
@@ -17,7 +18,7 @@ export const query = graphql`
 `
 
 const Tours = props => {
-  console.log("tours props: ", props)
+  // console.log("tours props: ", props)
   return (
     <Layout>
       <HeroStyled img={props.data.defaultBcg.childImageSharp.fluid}>
@@ -27,6 +28,7 @@ const Tours = props => {
           </Link>
         </Banner>
       </HeroStyled>
+      <ToursComponent />
     </Layout>
   )
 }

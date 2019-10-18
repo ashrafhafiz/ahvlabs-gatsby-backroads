@@ -7,6 +7,7 @@ import Banner from "../components/banner"
 import About from "../components/home/about"
 import Services from "../components/home/services"
 import { graphql } from "gatsby"
+import FeaturedTours from "../components/home/featuredTours"
 
 export const query = graphql`
   query {
@@ -36,6 +37,7 @@ export default props => {
       </HeroStyled>
       <About />
       <Services />
+      <FeaturedTours />
     </Layout>
   )
 }
