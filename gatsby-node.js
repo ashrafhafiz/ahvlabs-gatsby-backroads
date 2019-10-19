@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   data.allPages.edges.forEach(edge => {
     createPage({
-      path: `tous/${edge.node.slug}`,
+      path: `tours/${edge.node.slug}`,
       component: path.resolve("./src/templates/tour.template.js"),
       context: {
         slug: edge.node.slug,
