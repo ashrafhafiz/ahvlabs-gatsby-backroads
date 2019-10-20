@@ -17,19 +17,19 @@ export const query = graphql`
   }
 `
 
-const Blog = props => {
+const Blogs = props => {
   return (
     <Layout>
       <HeroStyled img={props.data.blogBcg.childImageSharp.fluid}>
         <Banner title="Blog" info="Lorem ipsum dolor sit amet consectetur.">
-          <Link to="/blog" className="btn-white">
+          <Link to="/blogs" className="btn-white">
             explore tours
           </Link>
         </Banner>
       </HeroStyled>
-      <PostsComponent />
+      <h1>Blogs</h1>
     </Layout>
   )
 }
 
-export default Blog
+export default Blogs

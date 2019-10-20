@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { FaAngleDown, FaAngleUp } from "react-icons/fa"
+import { FaPlus, FaMinus } from "react-icons/fa"
 import styles from "../../css/day.module.css"
 
 const DailySchedule = props => {
@@ -7,13 +7,13 @@ const DailySchedule = props => {
 
   return (
     <article className={styles.day}>
-      <h4>
+      <h4 style={{ background: "lightgray", padding: "0.5rem 1rem" }}>
         {props.item.day}
         <button
           className={styles.btn}
           onClick={() => setShowInfo(showInfo => !showInfo)}
         >
-          {!showInfo ? <FaAngleDown /> : <FaAngleUp />}
+          {!showInfo ? <FaPlus /> : <FaMinus />}
         </button>
       </h4>
       {showInfo && <p>{props.item.info}</p>}

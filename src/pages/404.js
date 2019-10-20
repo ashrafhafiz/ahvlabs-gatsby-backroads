@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import styles from "../css/error.module.css"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Banner from "../components/banner"
 
