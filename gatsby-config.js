@@ -15,7 +15,7 @@ module.exports = {
       "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
     author: "@johndoe",
     twitterUserName: "@Ashraf_HAH",
-    image: "/time_mosalah.jpg",
+    image: "/defaultBcg.jpeg",
     siteUrl: "https://ahvlabs-gatsby-backroads.netlify.com",
     data: ["item1", "item2"],
   },
