@@ -1,9 +1,25 @@
 .banner {
   text-align: center;
   letter-spacing: var(--mainSpacing);
-  color: #048085;
+  color: #ffffff;
   /* background: #c7c7c7; */
   /* opacity: 0.4; */
+  position: relative;
+  /* z-index: 10; */
+}
+.banner::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #969696;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+  z-index: -2;
+  border-radius: 25px;
 }
 .banner h1 {
   font-size: 3.3rem;
@@ -11,13 +27,15 @@
   margin-bottom: 2rem;
   padding: 0 1rem;
   letter-spacing: 6px;
+  /* z-index: 2; */
 }
 .banner p {
   width: 85%;
   margin: 0 auto;
   margin-bottom: 2rem;
-  background: #c7c7c7;
-  opacity: 0.7;
+  font-weight: 900;
+  /* background: #c7c7c7; */
+  /* opacity: 0.7; */
 }
 @media screen and (min-width: 768px) {
   .banner h1 {
