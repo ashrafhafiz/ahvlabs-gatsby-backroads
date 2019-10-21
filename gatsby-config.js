@@ -14,6 +14,9 @@ module.exports = {
     description:
       "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
     author: "@johndoe",
+    twitterUserName: "@Ashraf_HAH",
+    image: "/time_mosalah.jpg",
+    siteUrl: "https://ahvlabs-gatsby-backroads.netlify.com",
     data: ["item1", "item2"],
   },
   plugins: [
@@ -21,6 +24,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

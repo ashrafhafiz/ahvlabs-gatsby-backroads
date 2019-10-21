@@ -42,7 +42,7 @@ const BlogTemplate = props => {
         )
       },
       "embedded-entry-block": node => {
-        console.log(node)
+        // console.log(node)
         const { title, image, text } = node.data.target.fields
         return (
           <div className={styles.post}>

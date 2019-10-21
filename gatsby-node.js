@@ -19,6 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
       allPosts: allContentfulPost {
+        totalCount
         edges {
           node {
             slug
@@ -47,4 +48,24 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  //amount of posts
+  const postsCount = data.allPosts.totalCount
+  // posts per page
+  const postsPerPage = 3
+  // number of pages
+  const pagesCount = Math.ceil(postsCount / postsPerPage)
+  Array.from({ length: pagesCount }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/blogs/` : `blogs/${i + 1}`,
+      component: path.resolve("./src/templates/blogList.template.js"),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        pagesCount,
+        currentPage: i + 1,
+      },
+    })
+  })
+  // console.log(postsCount, postsPerPage, pagesCount, pages)
 }
